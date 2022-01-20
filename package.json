@@ -1,0 +1,10 @@
+{
+  "name": "eslint-config-hami",
+  "version": "1.0.0",
+  "description": "My eslint config",
+  "main": "index.js",
+  "repository": "https://github.com/hammy2899/eslint-config",
+  "author": "Sean <sean@hami.me>",
+  "license": "MIT",
+  "private": false
+}
