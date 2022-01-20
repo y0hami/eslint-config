@@ -11,3 +11,15 @@ yarn add --dev @hammy2899/eslint-config-hami
 yarn setuplint
 yarn
 ```
+
+#### React support
+
+Change `extends` to `hami/react` in `.eslintrc.json`
+```json
+{
+  "extends": ["hami/react"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}
+```
