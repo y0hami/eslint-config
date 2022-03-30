@@ -1,0 +1,6 @@
+{
+  "extends": ["@hammy2899/eslint-config-hami/react"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}
