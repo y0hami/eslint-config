@@ -1,18 +1,23 @@
 # eslint-config-hami
+My ESLint config for typescript (and react)
 
-My eslint config :)
+Based on [Standard](https://github.com/standard/standard)
 
+---
 
 ## Install
-> NOTE: Must setup [GitHub package registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry)
 
 ```bash
-yarn add --dev @hammy2899/eslint-config-hami
-yarn setuplint
-yarn
+yarn add --dev eslint-config-hami
+
+yarn esinit
+# OR for react
+yarn esinit --react
+
+yarn install
 ```
 
-#### React support
+## React support
 
 Change `extends` to `hami/react` in `.eslintrc.json`
 ```json
