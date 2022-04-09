@@ -1,5 +1,5 @@
 {
-  "extends": ["@hammy2899/eslint-config-hami"],
+  "extends": ["hami"],
   "parserOptions": {
     "project": "./tsconfig.json"
   }
