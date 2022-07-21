@@ -67,4 +67,5 @@ const templates = {
 const eslintrcTemplate = require(`../templates/${templates[argv.config]}`)
 fs.writeFileSync(eslintrcPath, JSON.stringify(eslintrcTemplate, null, 2))
 
+console.log('Installing peer dependencies...')
 exec('yarn install')
