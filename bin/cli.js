@@ -1,10 +1,15 @@
 #!/usr/bin/env node
-const fs = require('fs')
-const path = require('path')
+const fs = require('node:fs')
+const path = require('node:path')
+const { exec } = require('node:child_process')
 
-// check whether to use the react config
-const [,, ...args] = process.argv
-const useReact = args.includes('--react')
+const argv = require('yargs')
+  .help('h')
+  .alias('h', 'help')
+  .alias('c', 'config')
+  .choices('c', ['ts', 'react', 'nextjs'])
+  .demandOption('c')
+  .argv
 
 // get the projects package.json
 const pkgPath = path.resolve(process.cwd(), 'package.json')
@@ -13,14 +18,23 @@ const pkg = require(pkgPath)
 // get the peer deps we need to add
 const peers = require('../package.json').peerDependencies
 
-// remove react peer deps
-if (!useReact) {
+const removePeers = (glob) => {
   Object.keys(peers)
     .forEach(packageName => {
-      if (packageName.includes('react')) {
+      if (packageName.includes(glob)) {
         delete peers[packageName]
       }
     })
+}
+
+// remove peer deps depending on config
+if (argv.config === 'ts') {
+  removePeers('react')
+  removePeers('next')
+} else if (argv.config === 'react') {
+  removePeers('next')
+} else if (argv.config === 'nextjs') {
+  // keep all deps
 }
 
 // add the peer deps to the projects package.json
@@ -44,13 +58,13 @@ fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2))
 // create the .eslintrc file
 const eslintrcPath = path.resolve(process.cwd(), '.eslintrc.json')
 
-const templateName = useReact
-  ? 'eslintrc-react.template.json'
-  : 'eslintrc.template.json'
+const templates = {
+  ts: 'default.template.json',
+  react: 'react.template.json',
+  nextjs: 'nextjs.template.json'
+}
 
-const eslintrcTemplate = require(`../templates/${templateName}`)
+const eslintrcTemplate = require(`../templates/${templates[argv.config]}`)
 fs.writeFileSync(eslintrcPath, JSON.stringify(eslintrcTemplate, null, 2))
 
-console.log('')
-console.log('ESLint setup.')
-console.log(' > yarn install')
+exec('yarn install')
