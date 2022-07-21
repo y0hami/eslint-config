@@ -21,7 +21,6 @@
     "eslint": "^8.20.0",
     "eslint-config-next": "^12.2.2",
     "eslint-config-standard": "^17.0.0",
-    "eslint-config-standard-jsx": "^11.0.0",
     "eslint-config-standard-react": "git+https://github.com/standard/eslint-config-standard-react.git#f4524992516ede26dc2d4264966acb6bd6744d66",
     "eslint-config-standard-with-typescript": "^22.0.0",
     "eslint-plugin-import": "^2.26.0",
