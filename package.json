@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-hami",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "description": "My ESLint config for typescript (and react)",
   "main": "index.js",
   "repository": "https://github.com/hammy2899/eslint-config",
@@ -8,38 +8,49 @@
   "license": "MIT",
   "private": false,
   "bin": {
-    "esinit": "./bin/esinit.js"
+    "esinit": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "eslint --print-config ./configs/default.json",
+    "test:react": "eslint --print-config ./configs/react.json",
+    "test:next": "eslint --print-config ./configs/next.json"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.0.1",
-    "@typescript-eslint/parser": "^4.0.1",
-    "eslint": "^7.12.1",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-config-standard-react": "^11.0.1",
-    "eslint-config-standard-with-typescript": "^21.0.1",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.2.0",
-    "eslint-plugin-react": "^7.28.0",
-    "typescript": "^4.5.4"
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "eslint": "^8.20.0",
+    "eslint-config-next": "^12.2.2",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-config-standard-jsx": "^11.0.0",
+    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.30.1",
+    "typescript": "^4.7.4",
+    "yargs": "^17.5.1"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.0.1",
-    "@typescript-eslint/parser": "^4.0.1",
-    "eslint": "^7.12.1",
-    "eslint-config-standard-react": "^11.0.1",
-    "eslint-config-standard-with-typescript": "^21.0.1",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.2.0",
-    "eslint-plugin-react": "^7.28.0",
-    "typescript": "^4.5.4"
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "eslint": "^8.20.0",
+    "eslint-config-next": "^12.2.2",
+    "eslint-config-standard-jsx": "^11.0.0",
+    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.30.1",
+    "typescript": "^4.7.4"
   },
   "peerDependenciesMeta": {
     "eslint-plugin-react": {
       "optional": true
     },
     "eslint-config-standard-react": {
+      "optional": true
+    },
+    "eslint-config-next": {
       "optional": true
     }
   }
