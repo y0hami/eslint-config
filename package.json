@@ -49,7 +49,7 @@
     "eslint-plugin-react": {
       "optional": true
     },
-    "eslint-plugin-jsx": {
+    "eslint-config-standard-jsx": {
       "optional": true
     },
     "eslint-config-standard-react": {
