@@ -536,6 +536,11 @@ eslint-config-next@^12.2.2:
     eslint-plugin-react "^7.29.4"
     eslint-plugin-react-hooks "^4.5.0"
 
+eslint-config-standard-jsx@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-standard-jsx/-/eslint-config-standard-jsx-11.0.0.tgz#70852d395731a96704a592be5b0bfaccfeded239"
+  integrity sha512-+1EV/R0JxEK1L0NGolAr8Iktm3Rgotx3BKwgaX+eAuSX8D952LULKtjgZD3F+e6SvibONnhLwoTi9DPxN5LvvQ==
+
 "eslint-config-standard-react@git+https://github.com/standard/eslint-config-standard-react.git#f4524992516ede26dc2d4264966acb6bd6744d66":
   version "11.0.1"
   resolved "git+https://github.com/standard/eslint-config-standard-react.git#f4524992516ede26dc2d4264966acb6bd6744d66"
