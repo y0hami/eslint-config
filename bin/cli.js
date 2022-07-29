@@ -30,6 +30,7 @@ const removePeers = (glob) => {
 // remove peer deps depending on config
 if (argv.config === 'ts') {
   removePeers('react')
+  removePeers('jsx')
   removePeers('next')
 } else if (argv.config === 'react') {
   removePeers('next')
