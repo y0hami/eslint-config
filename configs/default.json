@@ -9,7 +9,8 @@
     "max-len": ["error", {
       "code": 80,
       "tabWidth": 2,
-      "ignoreUrls": true
+      "ignoreUrls": true,
+      "ignoreTemplateLiterals": true
     }],
     "max-lines": ["error", {
       "max": 250,
