@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-hami",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "My ESLint config for typescript (and react)",
   "main": "index.js",
   "repository": "https://github.com/hammy2899/eslint-config",
@@ -15,6 +15,9 @@
     "test:react": "eslint --print-config ./configs/react.json",
     "test:next": "eslint --print-config ./configs/next.json"
   },
+  "dependencies": {
+    "yargs": "^17.5.1"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.30.7",
     "@typescript-eslint/parser": "^5.30.7",
@@ -28,8 +31,7 @@
     "eslint-plugin-n": "^15.2.4",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.1",
-    "typescript": "^4.7.4",
-    "yargs": "^17.5.1"
+    "typescript": "^4.7.4"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.30.7",
