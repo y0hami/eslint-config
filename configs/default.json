@@ -10,7 +10,8 @@
       "code": 80,
       "tabWidth": 2,
       "ignoreUrls": true,
-      "ignoreTemplateLiterals": true
+      "ignoreTemplateLiterals": true,
+      "ignoreStrings": true
     }],
     "max-lines": ["error", {
       "max": 250,
