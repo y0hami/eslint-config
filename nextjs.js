@@ -1,1 +1,1 @@
-module.exports = require('./configs/nextjs.json')
+module.exports = require('./configs/nextjs.json');
