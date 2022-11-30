@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-hami",
-  "version": "1.4.4",
+  "version": "1.5.0",
   "description": "My ESLint config for typescript (and react)",
   "main": "index.js",
   "repository": "https://github.com/hammy2899/eslint-config",
@@ -16,36 +16,37 @@
     "test:next": "eslint --print-config ./configs/next.json"
   },
   "dependencies": {
-    "yargs": "^17.5.1"
+    "yargs": "^17.6.2"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.30.7",
-    "@typescript-eslint/parser": "^5.30.7",
-    "eslint": "^8.20.0",
-    "eslint-config-next": "^12.2.2",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0",
+    "eslint-config-next": "^13.0.5",
     "eslint-config-standard": "^17.0.0",
     "eslint-config-standard-jsx": "^11.0.0",
-    "eslint-config-standard-react": "git+https://github.com/standard/eslint-config-standard-react.git#f4524992516ede26dc2d4264966acb6bd6744d66",
-    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-config-standard-react": "^12.0.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.2.4",
-    "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "^7.30.1",
-    "typescript": "^4.7.4"
+    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.31.11",
+    "typescript": "^4.9.3"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.30.7",
-    "@typescript-eslint/parser": "^5.30.7",
-    "eslint": "^8.20.0",
-    "eslint-config-next": "^12.2.2",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0",
+    "eslint-config-next": "^13.0.5",
+    "eslint-config-standard": "^17.0.0",
     "eslint-config-standard-jsx": "^11.0.0",
-    "eslint-config-standard-react": "git+https://github.com/standard/eslint-config-standard-react.git#f4524992516ede26dc2d4264966acb6bd6744d66",
-    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-config-standard-react": "^12.0.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.2.4",
-    "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "^7.30.1",
-    "typescript": "^4.7.4"
+    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.31.11",
+    "typescript": "^4.9.3"
   },
   "peerDependenciesMeta": {
     "eslint-plugin-react": {
