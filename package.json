@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-hami",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "My ESLint config for typescript (and react)",
   "main": "index.js",
   "repository": "https://github.com/hammy2899/eslint-config",
