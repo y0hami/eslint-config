@@ -54,6 +54,9 @@
     "eslint-plugin-react": {
       "optional": true
     },
+    "eslint-plugin-react-hooks": {
+      "optional": true
+    },
     "eslint-config-standard-jsx": {
       "optional": true
     },
