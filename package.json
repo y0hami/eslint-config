@@ -16,7 +16,7 @@
     "test:next": "eslint --print-config ./configs/next.json"
   },
   "dependencies": {
-    "yargs": "^17.6.2"
+    "yargs": "^17.7.2"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.21.0",
