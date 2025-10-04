@@ -1,9 +1,10 @@
 #!/usr/bin/env node
-const fs = require('node:fs')
-const path = require('node:path')
-const { exec } = require('node:child_process')
+import fs from 'node:fs'
+import path from 'node:path'
+import { exec } from 'node:child_process'
+import yargs from 'yargs'
 
-const argv = require('yargs')
+const argv = yargs
   .help('h')
   .alias('h', 'help')
   .alias('c', 'config')
