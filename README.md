@@ -1,10 +1,6 @@
 # eslint-config-hami
 My ESLint config for typescript, react and nextjs
 
-Based on [Standard](https://github.com/standard/standard)
-
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
 ---
 
 ## Install
