@@ -66,7 +66,7 @@ const templates = {
   nextjs: 'nextjs.template.js'
 }
 
-const eslintrcTemplatePath = `../templates/${templates[argv.config]}`
+const eslintrcTemplatePath = path.resolve(__dirname, `../templates/${templates[argv.config]}`)
 fs.copyFileSync(eslintrcTemplatePath, eslintrcPath)
 
 console.log('Installing peer dependencies...')
