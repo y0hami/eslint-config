@@ -66,8 +66,8 @@ const templates = {
   nextjs: 'nextjs.template.js'
 }
 
-const eslintrcTemplate = require(`../templates/${templates[argv.config]}`)
-fs.writeFileSync(eslintrcPath, JSON.stringify(eslintrcTemplate, null, 2))
+const eslintrcTemplatePath = `../templates/${templates[argv.config]}`
+fs.copyFileSync(eslintrcTemplatePath, eslintrcPath)
 
 console.log('Installing peer dependencies...')
 exec('bun install')
