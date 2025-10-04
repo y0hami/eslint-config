@@ -1,1 +1,1 @@
-module.exports = require('./configs/default.json')
+module.exports = require('./configs/default.js')

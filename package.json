@@ -11,44 +11,42 @@
     "esinit": "./bin/cli.js"
   },
   "scripts": {
-    "test": "eslint --print-config ./configs/default.json",
-    "test:react": "eslint --print-config ./configs/react.json",
-    "test:next": "eslint --print-config ./configs/next.json"
+    "test": "eslint --print-config ./configs/default.js",
+    "test:react": "eslint --print-config ./configs/react.js",
+    "test:next": "eslint --print-config ./configs/next.js"
   },
   "dependencies": {
-    "yargs": "^17.7.2"
+    "yargs": "^18.0.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
-    "eslint": "^8.28.0",
-    "eslint-config-next": "^14.1.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-config-standard-jsx": "^11.0.0",
-    "eslint-config-standard-react": "^13.0.0",
-    "eslint-config-standard-with-typescript": "^43.0.1",
-    "eslint-plugin-import": "^2.26.0",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.5.4",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-n": "^16.6.2",
-    "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-react": "^7.31.11",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "typescript": "^5.3.3"
+    "eslint-plugin-perfectionist": "^4.15.1",
+    "eslint-plugin-promise": "^6.6.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.23",
+    "typescript": "^5.9.3"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
-    "eslint": "^8.28.0",
-    "eslint-config-next": "^14.1.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-config-standard-jsx": "^11.0.0",
-    "eslint-config-standard-react": "^13.0.0",
-    "eslint-config-standard-with-typescript": "^43.0.1",
-    "eslint-plugin-import": "^2.26.0",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.5.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-n": "^16.6.2",
-    "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-react": "^7.31.11",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "typescript": "^5.3.3"
+    "eslint-plugin-perfectionist": "^4.15.1",
+    "eslint-plugin-promise": "^6.6.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.23",
+    "typescript": "^5.9.3"
   },
   "peerDependenciesMeta": {
     "eslint-plugin-react": {
@@ -57,10 +55,7 @@
     "eslint-plugin-react-hooks": {
       "optional": true
     },
-    "eslint-config-standard-jsx": {
-      "optional": true
-    },
-    "eslint-config-standard-react": {
+    "eslint-plugin-react-refresh": {
       "optional": true
     },
     "eslint-config-next": {

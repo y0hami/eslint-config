@@ -10,11 +10,11 @@ Based on [Standard](https://github.com/standard/standard)
 ## Install
 
 ```bash
-yarn add --dev eslint-config-hami
+bun add --dev eslint-config-hami
 ```
 
 ```bash
-yarn esinit --config <config>
+bunx esinit --config <config>
 ```
 Configs: ts, react, nextjs
 

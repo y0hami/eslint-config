@@ -57,16 +57,16 @@ Object.keys(deps)
 fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2))
 
 // create the .eslintrc file
-const eslintrcPath = path.resolve(process.cwd(), '.eslintrc.json')
+const eslintrcPath = path.resolve(process.cwd(), '.eslintrc.js')
 
 const templates = {
-  ts: 'default.template.json',
-  react: 'react.template.json',
-  nextjs: 'nextjs.template.json'
+  ts: 'default.template.js',
+  react: 'react.template.js',
+  nextjs: 'nextjs.template.js'
 }
 
 const eslintrcTemplate = require(`../templates/${templates[argv.config]}`)
 fs.writeFileSync(eslintrcPath, JSON.stringify(eslintrcTemplate, null, 2))
 
 console.log('Installing peer dependencies...')
-exec('yarn install')
+exec('bun install')
