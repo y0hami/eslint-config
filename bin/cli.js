@@ -4,13 +4,13 @@ import path from 'node:path'
 import { exec } from 'node:child_process'
 import yargs from 'yargs'
 
-const argv = yargs
+const argv = yargs(process.argv.slice(2))
   .help('h')
   .alias('h', 'help')
   .alias('c', 'config')
   .choices('c', ['ts', 'react', 'nextjs'])
   .demandOption('c')
-  .argv
+  .parse()
 
 // get the projects package.json
 const pkgPath = path.resolve(process.cwd(), 'package.json')
